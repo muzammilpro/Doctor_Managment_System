@@ -3,14 +3,14 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import img from '../../public/assets/login.png'
-// import loginnSignup from './loginnSignup'
+
 
 export default function Navbar() {
-    const [isOpen, setIsOpen] = useState(false);
+    // const [isOpen, setIsOpen] = useState(false);
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
+    // const toggleMenu = () => {
+    //     setIsOpen(!isOpen);
+    // };
 
     return (
         <>
@@ -27,7 +27,7 @@ export default function Navbar() {
                         </Link>
                     </div>
 
-                    {/* Hamburger menu for small screens */}
+                    {/* Hamburger menu for small screens
                     <div className="block lg:hidden">
                         <button onClick={toggleMenu} className=" focus:outline-none">
                             {isOpen ? (
@@ -62,10 +62,10 @@ export default function Navbar() {
                                 </svg>
                             )}
                         </button>
-                    </div>
+                    </div> */}
 
                     {/* Navigation links */}
-                    <div className={`lg:flex ${isOpen ? 'block' : 'hidden'}`}>
+                    <div className='lg:flex'>
                         <div className="flex justify-between sm:gap-10">
                             <div className="flex space-x-4">
                                 <Link href="/home">
